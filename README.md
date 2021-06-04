@@ -16,14 +16,15 @@ Or alternatively
 conda install --file requirements.txt
 ```
 
-You will also need the BatsResearch/labelmodels/ Github repository, which you can find here: https://github.com/BatsResearch/labelmodels. We use this repository for the Semi-Supervised Dawid Skene implementation as a baseline.
+First, you will need to clone the BatsResearch/amcl Github repository. It serves as reference implementations of the algorithm proposed in our paper. This can be found at https://github.com/BatsResearch/amcl.  
 
-You should clone the repository, making a "labelmodels/" direcotry. After installing the respository, you will need to switch to the semi branch of labelmodels by running 
+Next, you will need the BatsResearch/labelmodels/ Github repository, which you can find here: https://github.com/BatsResearch/labelmodels. We use this repository for the Semi-Supervised Dawid Skene implementation as a baseline. You should clone the repository, making a "labelmodels/" directory. After installing the respository, you will need to switch to the semi branch of labelmodels by running 
 ```
 git checkout semi
 ```
 
 from the "labelmodels/" directory.
+
 
 ## Setup
 
@@ -44,7 +45,9 @@ and passing parameters sample_index to represent which sample of classes and dom
 
 ### Animals with Attributes 2
 
-You can additionally setup the experiments on the AwA2 dataset by following the steps outlined in https://github.com/BatsResearch/mazzetto-aistats21-code. By following the steps in this repository, you can create the weak supervision sources and download the AwA2 dataset images. After creating the sources and their outputs, you should put the data in "aa2" to create the "aa2/Animals_with_Attributes2/" directory. You should put the votes and signals in "aa2/votes" and "aa2/signals" respectively. You should put the processed data files in a "aa2/data" directory.
+You can additionally setup the experiments on the AwA2 dataset by following the steps outlined in https://github.com/BatsResearch/mazzetto-aistats21-code. By following the steps in this repository, you can create the weak supervision sources and download the AwA2 dataset images.   
+
+After creating the sources and their outputs, you should put the data in "aa2" to create the "aa2/Animals_with_Attributes2/" directory. You should put the votes and signals in "aa2/votes" and "aa2/signals" respectively. You should put the processed data files in a "aa2/data" directory.
 
 
 ## Running Experiments

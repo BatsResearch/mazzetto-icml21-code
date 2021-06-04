@@ -21,8 +21,8 @@ import domain_net.mini_domainnet as MDN
 import aa2.aa2_data as AA2
 
 # import algorithms
-import algorithms.subgradient_method as SG
-import algorithms.max_likelihood as ML
+import amcl.algorithms.subgradient_method as SG
+import amcl.algorithms.max_likelihood as ML
 
 # baseline implementations
 import labelmodels.labelmodels.naive_bayes as NB
